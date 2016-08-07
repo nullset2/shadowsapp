@@ -1,4 +1,5 @@
 class ShadowsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_shadow, only: [:show, :edit, :update, :destroy]
 
   # GET /shadows
