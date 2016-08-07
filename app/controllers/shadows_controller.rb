@@ -9,11 +9,10 @@ class ShadowsController < ApplicationController
   def create
     @shadow = Shadow.new(shadow_params)
 
-      if @shadow.save
-        render :show, status: :created, location: @shadow
-      else
-        render json: @shadow.errors, status: :unprocessable_entity
-      end
+    if @shadow.save
+      render :show, status: :created, location: @shadow
+    else
+      render json: @shadow.errors, status: :unprocessable_entity
     end
   end
 
