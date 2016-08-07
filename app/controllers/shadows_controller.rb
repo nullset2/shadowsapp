@@ -3,11 +3,12 @@ class ShadowsController < ApplicationController
   before_action :set_shadow, only: [:show, :edit, :update, :destroy]
 
   def index
-    @shadows = Shadow.all
+    @shadows = current_user.shadows if current_user
+    else Shadow.all
   end
 
   def create
-    @shadow = Shadow.new(shadow_params)
+    @shadow = current_user.shadows.build(shadow_params)
 
     if @shadow.save
       render :show, status: :created, location: @shadow
