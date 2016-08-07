@@ -10,7 +10,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'devise_token_auth'
+gem 'devise_token_auth', git: 'git://github.com/lynndylanhurley/devise_token_auth.git'
 gem 'omniauth'
 gem 'paperclip', '~> 5.0'
 
