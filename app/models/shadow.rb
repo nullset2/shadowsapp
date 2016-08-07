@@ -1,0 +1,2 @@
+class Shadow < ApplicationRecord
+end
