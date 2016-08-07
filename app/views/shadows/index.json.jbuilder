@@ -1,0 +1,1 @@
+json.array! @shadows, partial: 'shadows/shadow', as: :shadow

@@ -1,0 +1,1 @@
+json.partial! "shadows/shadow", shadow: @shadow
