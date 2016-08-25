@@ -8,7 +8,7 @@ This application allows you to perform RESTful actions on a series of `/shadows`
 
 Featuring:
 
-- Token based authentication with [https://github.com/lynndylanhurley/devise_token_auth](devise_token_auth)
+- Token based authentication with [devise_token_auth](https://github.com/lynndylanhurley/devise_token_auth)
 - Relational database-backed models (postgres is reccomended but you may use any RDBMS you want --migrations are included)
 - A resourceful json-based API to get `shadow`s by GETting `/shadows` or POSTing `/shadows`
 
